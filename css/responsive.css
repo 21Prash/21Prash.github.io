@@ -1,0 +1,28 @@
+@media only screen and (max-width: 600px){
+    #error-img{
+        width:500px;
+    }
+    .container{
+        display:flex;
+        flex-direction:column;
+        padding:0px;
+        justify-content:center;
+        align-items:center;
+    }
+    .wrap-youtube img{
+        width:300px;
+    }
+    .wrap-youtube{
+        padding:0px;
+        margin:0px;
+        margin-bottom:20px;
+    }
+    .wrap-insta img{
+        width:300px;
+    }
+    .wrap-insta{
+        padding:0px;
+        margin:0px;
+        margin-top:20px;
+    }
+}

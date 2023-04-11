@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is the #21st Hashtagentuary</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="inner-width">
+        <a href="/" class="logo"></a>
+        <button class="menu-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-menu">
+          <a href="#STORIES">ADVENTURE STORIES</a>
+          <a href="#" onClick="return confirm('The answer is HOME')">[is where your heart is]</a>
+          <a href="404.html">SPOKEN WORDS</a>
+          <!-- <a href="#">ENQUIRIES</a> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- home-->
+    <section id="home">
+      <div class="inner-width">
+        <div class="content">
+          <h1>#21 Prashant</h1>
+          <div class="typewriter">
+            <h2>“ Life should always be an Adventure ”</h2>
+          </div>
+          <div class="sm">
+            <a href="https://www.youtube.com/prashanttut" class="fab fa-youtube" target="_blank"></a>
+            
+            <a href="https://www.linkedin.com/in/prashant-gautam-er" class="fab fa-linkedin-in" target="_blank"></a>
+            <a href="https://www.reddit.com/r/21Submissions" class="fab fa-reddit-alien" target="_blank"></a>
+          </div>
+          <div class="buttons">
+            <a href="https://www.youtube.com/prashanttut?sub_confirmation=1" target="_blank">Subscribe</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media container -->
+    <section class="not-white">
+      <div class="media">
+        <div>
+          <h1 class="section-title">W a T c H a R a N d O m 1</h1>
+        </div>
+      
+      <div class="watch">
+        <iframe
+          id="youtube-loader"
+          frameborder="0"
+          width="800"
+          height="400"
+          allow="encrypted-media; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <script>
+          var randomVideoIndex = Math.floor(Math.random() * 41);
+          document
+            .getElementById("youtube-loader")
+            .setAttribute(
+              "src",
+              "https://www.youtube.com/embed?listType=playlist&list=PLBP72V2dN5hDcXIzLti4kZovLwBHX_lXo&index=" + randomVideoIndex
+            );
+        </script>
+      </div>
+
+      <!-- Read -->
+      <div class="not-media">
+        <div id="STORIES">
+          <h1 class="section-title">R E a D a R a N d O m 1</h1>
+        </div>
+      </div>
+      
+        <div class="coming-soon">
+          <h2>
+            This part is being summited, polar bear with!</br></br>
+            Coming very soon, just need your patience :)
+          </h2>
+        </div>
+      
+    </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="inner-width">
+        <div class="copyright">Live since 2018 | All rights reserved?</div>
+      </div>
+    </footer>
+
+    <!-- Go Top BTN -->
+    <button class="goTop fas fa-arrow-up"></button>
+    <style>
+      img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+        display: none;
+      }
+    </style>
+  </body>
+</html>
