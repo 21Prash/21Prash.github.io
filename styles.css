@@ -190,6 +190,35 @@ header{
   .column{display:none;}
 }
 
+
+
+/* --- Layering fix: show florals above altar, below content --- */
+.altar { position: relative; }
+
+.arch, .spotlight { z-index: 1; }
+
+.hydrangea, .orchids, .sunflower{
+  z-index: 2;                 /* florals layer */
+  opacity: 1;                 /* make them visible */
+  filter: none;               /* remove blur that was washing them out */
+}
+
+.grid{
+  position: relative;
+  z-index: 3;                 /* your content cards sit above florals */
+}
+
+/* Make cards slightly more see-through so florals can be seen around/behind */
+.card{
+  background: rgba(255,255,255,.60);
+  border: 1px solid rgba(22,50,79,.12);
+  backdrop-filter: blur(8px);
+}
+
+/* the content above is added after  */
+
+
+
 /* Cards */
 .card{
   background: var(--card);
