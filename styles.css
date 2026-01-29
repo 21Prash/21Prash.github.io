@@ -1,33 +1,26 @@
-:root{
-  /* Light blue + white theme */
-  --sky1:#eaf6ff;
-  --sky2:#cfeaff;
-  --sky3:#b6dcff;
-
-  --text:#16324f;
-  --muted: rgba(22,50,79,.72);
-
-  --card: rgba(255,255,255,.62);
-  --border: rgba(22,50,79,.12);
-
-  --stone:#ffffff;
-  --stone2:#e9f0f7;
-
-  --shadow: rgba(10,30,60,.18);
+:root {
+  /* Muted "Old Money" Palette */
+  --altar-marble: #fcfaf7;
+  --soft-drape: rgba(255, 255, 255, 0.8);
+  --accent-gold: #d4af37;
+  --text-main: #2c3e50;
+  --sky-pale: #e3f2fd;
+  --glass: rgba(255, 255, 255, 0.4);
 }
 
 *{box-sizing:border-box}
 html,body{height:100%}
 
-body{
-  margin:0;
-  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
-  color:var(--text);
-  background:
-    radial-gradient(900px 600px at 50% 10%, rgba(255,255,255,.90), transparent 62%),
-    radial-gradient(900px 900px at 15% 90%, rgba(255,255,255,.55), transparent 60%),
-    linear-gradient(160deg, var(--sky1), var(--sky2) 55%, var(--sky3));
-  overflow-x:hidden;
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif; /* Elegant wedding font */
+  color: var(--text-main);
+  background: linear-gradient(to bottom, var(--sky-pale), var(--altar-marble));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 /* Soft sparkles */
@@ -55,10 +48,12 @@ header{
   padding-bottom: 12px;
 }
 
-.title{
-  font-size:clamp(32px,4vw,52px);
-  margin: 10px 0 8px;
-  letter-spacing: .4px;
+.title {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: var(--text-main);
 }
 
 .subtitle{
@@ -112,23 +107,16 @@ header{
   z-index: 1;
 }
 
-.arch{
-  position:absolute;
-  left:50%;
-  transform:translateX(-50%);
-  top:-30px;
-  width:min(820px, 96%);
-  height:320px;
-  border-radius:999px 999px 36px 36px;
-  border: 2px solid rgba(22,50,79,.18);
-  background:
-    radial-gradient(520px 240px at 50% 78%, rgba(255,255,255,.55), transparent 70%),
-    linear-gradient(180deg, rgba(255,255,255,.65), rgba(255,255,255,.25));
-  box-shadow:
-    0 25px 60px rgba(10,30,60,.12),
-    0 0 90px rgba(255,255,255,.55);
-  pointer-events:none;
-  z-index: 2;
+.arch {
+  position: absolute;
+  top: 10%;
+  width: 80%;
+  height: 85%;
+  border: 2px solid var(--soft-drape);
+  border-bottom: none;
+  border-radius: 50% 50% 0 0 / 20% 20% 0 0;
+  z-index: -1;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
 }
 
 /*
@@ -209,13 +197,14 @@ header{
 }
 
 /* Cards */
-.card{
-  background: rgba(255,255,255,.60);
-  border:1px solid rgba(22,50,79,.12);
-  border-radius:18px;
-  padding:16px;
-  box-shadow: 0 16px 40px rgba(10,30,60,.12);
-  backdrop-filter: blur(8px);
+.card {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  text-align: center;
 }
 .card h2{
   margin: 4px 0 10px;
