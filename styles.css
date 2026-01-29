@@ -96,9 +96,11 @@ header{
 }
 
 /* Scene / altar */
-.scene{position:relative; margin-top: 10px;}
+.scene{position:relative; }
 .altar{
   position:relative;
+  z-index: 3;
+  pointer-events: none;
   background: rgba(255,255,255,.55);
   border: 1px solid rgba(22,50,79,.12);
   border-radius:24px;
@@ -144,6 +146,7 @@ header{
 /* Arch */
 .arch{
   position:absolute;
+  z-index: 1;
   left:50%;
   transform:translateX(-50%);
   top:-30px;
@@ -163,6 +166,7 @@ header{
 /* Soft spotlight */
 .spotlight{
   position:absolute;
+  z-index: 0;
   left:50%;
   top: 120px;
   transform:translateX(-50%);
@@ -262,6 +266,7 @@ iframe{position:absolute;inset:0;width:100%;height:100%}
 /* Hydrangea “pom-poms” (blue clusters) */
 .hydrangea{
   position:absolute;
+  z-index: 2;
   top: 18px;
   width: 240px;
   height: 240px;
@@ -317,6 +322,7 @@ iframe{position:absolute;inset:0;width:100%;height:100%}
 /* Single sunflower accent */
 .sunflower{
   position:absolute;
+  z-index: 2;
   right: 26px;
   top: 182px;
   width: 78px;
