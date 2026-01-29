@@ -378,3 +378,5 @@ iframe{position:absolute;inset:0;width:100%;height:100%}
 @media(max-width:900px){
   .sunflower{ right: 14px; top: 150px; transform: scale(.92); }
 }
+
+.hydrangea, .orchids, .sunflower { outline: 2px solid red; background: rgba(255,0,0,.12); }
